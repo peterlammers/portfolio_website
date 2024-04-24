@@ -2,6 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+@media only screen and (max-width: 500px) {
+  #main_logo {
+    visibility: hidden;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -149,8 +155,8 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  padding-top: 15vh;
+  height: relative;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -166,13 +172,13 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  /*height: 80vh;*/
 }
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 25rem;
+  width: 25rem;
   margin: auto 0;
 }
 
@@ -211,6 +217,40 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+}
+
+.checkmark-icon {
+  font-size:25px;
+  margin-right:0.5rem;
+}
+
+.logo-icon {
+  cursor: pointer;
+  font-size:40px;
+}
+
+.arrow-icon {
+  font-size:28px;
+  cursor:pointer;
+  position:absolute;
+  right:-5rem;
+  bottom:2.5rem;
+}
+
+.about-icon {
+  font-size:40px;
+  margin-bottom:1rem;
+}
+
+/* IMAGES */
+
+.work-img-top {
+  float: center;
+  border-radius: 2rem;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  min-height: 10rem;
+  max-width: 10rem; /* adjust as needed */
 }
 
 /* BUTTONS */
@@ -269,8 +309,8 @@ section {
 
 .about-containers {
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .about-details-container {
@@ -281,16 +321,31 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+  margin-top: 2rem
 }
 
 .about-pic {
   border-radius: 2rem;
+  min-width: 25rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rounded-pic {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .details-container {
@@ -303,15 +358,22 @@ section {
   text-align: center;
 }
 
+.details-container p {
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: justify;
+}
+
 .section-container {
   gap: 4rem;
   height: 80%;
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
+  height: 25rem;
+  width: 25rem;
   margin: auto 0;
+  justify-content: center;
 }
 
 /* EXPERIENCE SECTION */
@@ -324,7 +386,7 @@ section {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .experience-details-container {
@@ -339,13 +401,13 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
+  width: 15rem;
+  justify-content: left;
   gap: 0.5rem;
 }
 
@@ -361,17 +423,22 @@ article .icon {
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: #fafafa;
 }
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  height: 2rem;
+  width: 2rem;
 }
 
 .project-title {
   margin: 1rem;
+  color: black;
+}
+
+.project-subtitle {
+  margin: 0.5rem;
   color: black;
 }
 

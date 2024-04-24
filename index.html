@@ -7,21 +7,22 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Peter Lammers</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">Achtergrond</a></li>
+          <li><a href="#experience">Ervaring</a></li>
+          <li><a href="#projects">Projecten</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Peter Lammers</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -29,353 +30,361 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#about" onclick="toggleMenu()">Achtergrond</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Curriculum vitae</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projecten</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/peter2.jpg" alt="Peter Lammers profile picture" class="rounded-pic" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p1">Hallo, ik ben</p>
+        <h1 class="title">Peter Lammers</h1>
+        <p class="section__text__p2">Data Engineer Consultant @ Sc.Tiger</p>
         <div class="btn-container">
+<!--
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/resume-example.pdf')"
           >
             Download CV
           </button>
+-->
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
+          <i
+            class="fa-brands fa-linkedin-in logo-icon"
             alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
+            onclick="location.href='https://www.linkedin.com/in/peter-lammers/'"
+          ></i>
+          <i 
+            class="fa-brands fa-github logo-icon"
             alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+            onclick="location.href='https://github.com/peterlammers'"
+          ></i>
+          <i 
+            class="fa-brands fa-x-twitter logo-icon"
+            alt="My X page"
+            onclick="location.href='https://twitter.com/p_lammers'"
+          ></i>
         </div>
       </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
+      <p class="section__text__p1">Kom meer te weten over mijn</p>
+      <h1 class="title">Achtergrond</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/peter1.jpg"
             alt="Profile picture"
             class="about-pic"
           />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+            <div class="details-container color-container">
+              <i class="fa-solid fa-award about-icon"></i>
+              <h3>Ervaring</h3>
+              <p><script type="text/javascript">document.write( new Date().getFullYear() - 2019);</script>+ jaar <br/>Data Engineer<br/>Data Scientist</p>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            <div class="details-container color-container">
+              <i class="fa-solid fa-user-graduate about-icon"></i>
+              <h3>Opleiding</h3>
+              <p>MSc Marketing Intelligence & Management<br>BSc Sport Management</p>
             </div>
           </div>
-          <div class="text-container">
+          <div class="text-justify">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              Ik ben een gepassioneerde Data Engineer met uitgebreide ervaring in verschillende technologieën, waaronder het Azure-platform, Power BI, Python, R, Git en SAS. Mijn expertise in Python stelt me in staat analyses uit te voeren, data pipelines te ontwikkelen en geautomatiseerde processen te implementeren voor efficiënte verwerking van grote datasets, terwijl ik gebruikmaak van geavanceerde bibliotheken en frameworks.
+              <br><br>
+              Daarnaast heb ik ervaring met het opzetten van datastromen en schaalbare oplossingen voor gegevensverwerking op het Azure-platform, inclusief Synapse en Azure Data Factory. Met Power BI kan ik complexe gegevenssets vertalen naar begrijpelijke informatie via dashboards en rapporten, waardoor ik waardevolle inzichten lever voor belanghebbenden. Ik hecht waarde aan het ondersteunen van anderen en ben in staat complexe concepten begrijpelijk uit te leggen aan niet-technische stakeholders, waardoor ik bijdraag aan het succes van data-gedreven initiatieven.
             </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
+<!--     
+        <i class="fa-solid fa-arrow-down arrow-icon"
         onclick="location.href='./#experience'"
-      />
+        id="main_logo"
+      ></i>
+-->
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <p class="section__text__p1">Ontdek mijn</p>
+      <h1 class="title">Ervaring</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+          <div class="details-container color-container">
+                        <img 
+              src="./assets/sctiger_logo.svg"
+              alt="Sc.Tiger logo"
+              class="work-img-top"
+            />
+            <h2 class="experience-sub-title">Sc.Tiger (2023 - heden)</h2>
+            <div class="text-container">
+              <p>
+              Als Data Engineer Consultant bij Sc.Tiger ben ik toegewijd aan het ondersteunen van klanten bij het verder doorontwikkelen van hun data platform. Mijn rol omvat het bouwen van robuuste data flows, het verbeteren van ETL-processen en het onderzoeken van de nieuwste technologieën om te voldoen aan de evoluerende behoeften van onze klanten. Daarnaast speel ik een actieve rol in het ontwikkelen van overzichtelijke en informatieve rapportages in Microsoft Power BI, waardoor onze klanten waardevolle inzichten kunnen verkrijgen uit hun gegevens. Mijn focus ligt op het leveren van op maat gemaakte oplossingen die de operationele efficiëntie verbeteren en de besluitvorming ondersteunen, terwijl ik tegelijkertijd de hoogste normen van data-integriteit en veiligheid handhaaf.
+              </p>
             </div>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+        </div>
+        <div class="about-containers">
+          <div class="details-container color-container">
+                        <img 
+              src="./assets/achmea_logo.png"
+              alt="Achmea logo"
+              class="work-img-top"
+            />
+            <h2 class="experience-sub-title">Achmea (2021 - 2023)</h2>
+            <div class="text-container">
+              <p>
+                Bij Achmea speelde ik een cruciale rol in het verbeteren van diverse pricing processen door middel van automatisering. Mijn verantwoordelijkheden omvatten niet alleen het stroomlijnen van deze processen, maar ook het vinden van innovatieve manieren om ze te optimaliseren en efficiënter te maken. Dit hield in dat ik nauw samenwerk met verschillende stakeholders binnen de organisatie, zoals IT, product teams en het pricing team.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <img 
+              src="./assets/memo2_logo.jpg"
+              alt="MeMo² logo"
+              class="work-img-top"
+            />
+            <h2 class="experience-sub-title">MeMo² (2019 - 2021)</h2>
+            <div class="text-container">
+              <p>
+                Bij MeMo² vervulde ik een verantwoordelijke rol waarin ik mij bezighield met het analyseren van de marketingeffectiviteit voor zowel grote Nederlandse als internationale merken. Mijn werk omvatte het grondig onderzoeken en evalueren van verschillende marketingcampagnes, waarbij ik inzicht verschafte in hun impact en rendement. Door het verzamelen en analyseren van gegevens, zoals marktonderzoek, klantgedrag en mediabestedingen, was ik in staat om waardevolle inzichten te genereren die bijdragen aan het verbeteren van de marketingstrategieën van onze klanten.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <img 
+              src="./assets/belsimpel_logo.png"
+              alt="Belsimpel logo"
+              class="work-img-top"
+            />
+            <h2 class="experience-sub-title">Belsimpel (2017 - 2019)</h2>
+            <div class="text-container">
+              <p>
+                Bij Belsimpel, de grootste retailer op het gebied van telecom in Nederland, vervulde ik een verantwoordelijke rol waarin ik mij bezighield met het opzetten, onderhouden en verbeteren van online marketingcampagnes. Met een assortiment van meer dan 500 telefoons beschikte Belsimpel over het meest uitgebreide aanbod op de Nederlandse markt. Mijn belangrijkste doel was ervoor te zorgen dat de marketingcampagnes een maximaal bereik hadden bij de juiste doelgroep en dat deze campagnes bijdroegen aan de groei van de verkoop.              </p>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title">Vaardigheden</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-solid fa-circle-check checkmark-icon"></i>
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <h3>SQL</h3>
+                  <p>Ervaren</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-solid fa-circle-check checkmark-icon"></i>
                 <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
+                  <h3>Python</h3>
+                  <p>Ervaren</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-solid fa-circle-check checkmark-icon"></i>
                 <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
+                  <h3>Microsoft Power BI</h3>
+                  <p>Ervaren</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-solid fa-circle-check checkmark-icon"></i>
+                <div>
+                  <h3>Azure Synapse</h3>
+                  <p>Gevorderd</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check checkmark-icon"></i>
+                <div>
+                  <h3>Azure Data Factory</h3>
+                  <p>Gevorderd</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check checkmark-icon"></i>
                 <div>
                   <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <p>Gevorderd</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check checkmark-icon"></i>
+                <div>
+                  <h3>PowerShell</h3>
+                  <p>Basis</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check checkmark-icon"></i>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basis</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title">Certificaten</h2>
+            <div class="article-container test">
+              <article>
+                <i class="fa-solid fa-circle-check checkmark-icon"></i>
+                <div>
+                  <h3>Microsoft AZ-900</h3>
+                  <p>A1F810-5D6K16</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check checkmark-icon"></i>
+                <div>
+                  <h3>Microsoft DP-900</h3>
+                  <p>72651A-AC1A8T</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check checkmark-icon"></i>
+                <div>
+                  <h3>Microsoft PL-300</h3>
+                  <p>F245X4-543E07</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-circle-check checkmark-icon"></i>
+                <div>
+                  <h3>Data Vault Modeling</h3>
+                  <p>Genesee Academy, LLC</p>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
+<!--      
+      <i class="fa-solid fa-arrow-down arrow-icon"
         onclick="location.href='./#projects'"
-      />
+        id="main_logo"
+      ></i>
+-->
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <p class="section__text__p1">Bekijk mijn recente</p>
+      <h1 class="title">Projecten</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
+                src="./assets/ing_logo.png"
+                class="work-img-top"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">ING</h2>
+            <h3 class="project-subtitle">Sc.Tiger</h3>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              <p>
+                Bij ING werk ik samen met een toegewijd team aan het onderhouden van een data platform op Microsoft SQL in de ING private cloud. Mijn rol omvat het voortdurend ontwikkelen van ETL-processen, het verkennen van de mogelijkheden van Microsoft Fabric en het verbeteren van onze werkprocessen om efficiëntie te waarborgen. 
+                <br><br>
+                Recentelijk hebben we als team een succesvolle migratie uitgevoerd van SQL 2016 naar SQL 2019, waarbij we nauw samenwerkten om een vlotte overgang te garanderen en de prestaties van het platform te verbeteren.                
+                <br><br>
+                Alle servers onderhouden met certificaten, autorisaties en de software. Op basis van het data platform ondersteun ik bij het ontwikkelen van rapportages in Microsoft Power BI.
+              </p>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
+                src="./assets/achmea_logo.png"
+                class="work-img-top"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Achmea</h2>
+            <h3 class="project-subtitle">Achmea</h3>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              <p>
+                Een van mijn belangrijke taken was het ontwikkelen van dashboards in Microsoft Power BI, een verschuiving van voornamelijk Excels. Deze dashboards bieden het management en andere stakeholders inzicht in Achmea's schadeproductportfolio en de concurrentie in de markt. Met heldere visualisaties en interactieve functies presenteer ik complexe gegevens op een begrijpelijke manier, wat helpt bij weloverwogen besluitvorming.
+                <br><br>
+                Daarnaast heb ik bijgedragen aan de migratie van het SAS-platform naar Microsoft Azure, een strategische stap voor onze organisatie. Als data-engineer in het migratieteam werkte ik samen met verschillende stakeholders om een soepele overgang te garanderen. Mijn taken omvatten onder andere het bouwen van data-pipelines, ontwerpen van migratie-architectuur en coördineren van datatransformatie. Door geavanceerde data-infrastructuur en tools op Azure te gebruiken, zoals Data Factory en Synapse, kunnen we nauwkeurige analyses uitvoeren die waardevolle inzichten opleveren voor Achmea's tarieven.
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
+                src="./assets/thx_logo.png"
+                class="work-img-top"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">THX.</h2>
+            <h3 class="project-subtitle">MeMo²</h3>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              <p>
+                Tijdens mijn werkzaamheden bij MeMo² was ik nauw betrokken bij de ontwikkeling en implementatie van een innovatieve app genaamd THX. Deze app heeft als doel om marketing professionals te voorzien van gedetailleerde informatie over het bereik en de effectiviteit van hun marketingcampagnes.
+                <br><br>
+                Als lid van het team dat betrokken was bij THX., werkte ik aan het ontwerp, de functionaliteiten en de analyse processen van de app. Ik zorgde ervoor dat de verzamelde gegevens op een duidelijke en bruikbare manier werden gepresenteerd in Microsoft Power BI, zodat collega’s waardevolle inzichten konden verkrijgen en op basis daarvan weloverwogen adviezen konden geven aan onze klanten om hun marketingprestaties te verbeteren.
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
+<!--
+      <i class="fa-solid fa-arrow-down arrow-icon"
         onclick="location.href='./#contact'"
-      />
+        id="main_logo"
+      ></i>
+-->
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
+      <div class="contact-info-upper-container color-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <i
+            class="fa-solid fa-envelope logo-icon"
+            alt="My LinkedIn profile"
+            onclick="location.href='https://www.linkedin.com/in/peter-lammers/'"
+          ></i>
+          <p><a href="mailto:me@peterlammers.nl">me@peterlammers.nl</a></p>
         </div>
+<!--
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <i
+            class="fa-brands fa-linkedin logo-icon"
+            alt="My LinkedIn profile"
+            onclick="location.href='https://www.linkedin.com/in/peter-lammers/'"
+          ></i>
+          <p><a href="https://www.linkedin.com/peter-lammers">LinkedIn</a></p>
         </div>
+-->
       </div>
     </section>
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">Achtergrond</a></li>
+            <li><a href="#experience">Ervaring</a></li>
+            <li><a href="#projects">Projecten</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>&#169; <script type="text/javascript">document.write( new Date().getFullYear() );</script> Peter Lammers</p>
     </footer>
     <script src="script.js"></script>
   </body>
