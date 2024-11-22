@@ -376,6 +376,25 @@ section {
   justify-content: center;
 }
 
+/* REFERENCE SECTION */
+#reference {
+  position: relative;
+}
+
+.reference-title {
+  color: black;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.reference-sub-title {
+  color: black;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -383,7 +402,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: black;
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 1rem;
@@ -433,13 +452,16 @@ article .icon {
 }
 
 .project-title {
-  margin: 1rem;
   color: black;
+  font-weight: 600;
+  font-size: 1.75rem;
 }
 
 .project-subtitle {
-  margin: 0.5rem;
   color: black;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .project-btn {
